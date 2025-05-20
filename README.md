@@ -1,12 +1,3 @@
-# Tenzies
-Simple web game where you roll dices until all ten dices are the same value
-
-This is a web game where you roll 10 dices until all of them are have the same value if you click a dice it wont be rolled the next time.
-You can roll dices click them to hold this certain die and when you win confeti fall and the roll button is changed to new game
-I made this using vite + react javascript html and css.
-I have also done aria-live and labeel for more accesability
-
-
 # 🎲 Tenzies
 
 A simple and fun dice game built with **React** and **Vite**.
