@@ -1,6 +1,6 @@
 # 🎲 Tenzies
 
-A simple and fun dice game built with **React** and **Vite**.
+A simple and fun dice game built with **React** and **Vite** as part of the [Scrimba React Course](https://scrimba.com/learn-react-c0e).
 
 The goal is to roll 10 dice until they all show the same number. You can "hold" dice to prevent them from being re-rolled. Once all dice match, confetti rains down and the roll button turns into a “New Game” button!
 
@@ -8,7 +8,7 @@ The goal is to roll 10 dice until they all show the same number. You can "hold" 
 
 ## 🚀 Live Demo
 
-[Live Demo](____)
+[Live Demo](https://stunning-alfajores-0a9253.netlify.app/)
 
 ---
 
