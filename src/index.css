@@ -1,0 +1,163 @@
+:root {
+    --body-bg: #0B2434;
+    --main-bg: #F5F5F5;
+    --roll-dice-btn-bg: #5035FF;
+    --clicked-dice: #59E391;
+    /* --clicked-dice: rgb(7, 240, 92); */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Karla, sans-serif;
+
+    margin: 0;
+    background-color: var(--body-bg);
+
+    height: 100vh;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#root {
+    height: 100%;
+    width: 100%;
+
+    max-height: 1000px;
+    max-width: 1000px;
+    min-height: 400px;
+    min-width: 400px;
+
+}
+
+.main-wrapper {
+    /* background-color: var(--main-bg-color); */
+    background-color: darkcyan;
+    /* background-color: white; */
+
+    height: 100%;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 5rem;
+    margin: 0;
+
+    color: white;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 0;
+    text-align: center;
+
+    color: white;
+
+}
+
+.dice-wrapper {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 2rem;
+
+    width: 100%;
+}
+
+.dice-wrapper > * {
+  justify-self: center;
+  align-self: center;
+}
+
+
+.die {
+    border: none;
+    box-shadow: 0px 2px 2px 0px #00000026;
+    
+    background-color: white;
+
+    border-radius: 17px; 
+    /* da go vidq pak */
+    
+    width: 5rem;
+    height: 5rem;
+    
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+    cursor: pointer;    
+}
+
+.clicked {
+    background-color: var(--clicked-dice);
+}
+
+.roll-dice-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+
+    background-color: var(--roll-dice-btn-bg);
+
+    color: white;
+
+
+    white-space: nowrap;
+    width: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 649px) {
+
+.die {
+        
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 12px;
+}
+
+.dice-wrapper {
+    gap: 1rem;
+}
+
+.main-wrapper {
+    gap: 0.5rem;
+}
+
+.dice-wrapper {
+    display: grid;
+    grid-template: auto auto / repeat(2, 1fr);
+    gap: 1rem;
+
+    width: 100%;
+}
+
+}
